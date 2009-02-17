@@ -138,13 +138,13 @@ div.skip-link a:focus {
 #site-title a {
 	height: 184px;
 	width: 163px;
-	background: url(/~philips/style/lpc-notext.png) no-repeat;
+	background: url(lpc-notext.png) no-repeat;
 }
 
 #site-description {
 	width: 667px;
 	height: 79px;
-	background: url(/~philips/style/tagline.png) no-repeat;
+	background: url(tagline.png) no-repeat;
 }
 
 div#header,div#footer {
