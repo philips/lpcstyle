@@ -1,0 +1,232 @@
+/*
+LAYOUT: Two-Column (Right)
+DESCRIPTION: Two-column fluid layout with one sidebars right of content
+*/
+
+
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border:0 none;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+}
+
+p {
+margin:0 0 1.5em;
+}
+
+body {
+	font: 87.5%/1.5em "Helvetica Neue", Arial, Helvetica, "Liberation sans", "Bitstream Vera Sans", sans-serif;
+	background:#FFC211 none repeat scroll 0 0;
+	font-size:87.5%;
+	position: relative;
+	padding: 0 .5em 0 .5em;
+}
+
+#wrapper {
+	background:#FFFFFF none repeat scroll 0 0;
+	position:relative;
+	min-width:65em;
+	max-width:80em;
+	margin: 0 auto;
+}
+
+div#content {
+	padding-left: 1em;
+}
+
+/*
+ * MENU
+ */
+
+div#menu {
+	font-size:1em;
+	height:1.5em;
+	padding-top:0.3em;
+	width:100%;
+	background: #00483a;
+}
+
+div#menu ul {
+	padding: 6px 0 7px 0;
+	margin: 0;
+	text-align: right;
+}
+
+div#menu ul li {
+	display: inline;
+	float:left;
+}
+
+div#menu ul li a {
+	font-size: 1.2em;
+	color: #fff;
+	padding: 6px 3px 4px 3px;
+	margin-left: 20px;
+	text-decoration: none;
+	border-bottom: 3px solid gray;
+	text-transform: uppercase;
+}
+
+div#menu ul li a:hover, div#menu ul li a.selected {
+	border-bottom-color: black;
+}
+
+blockquote {
+       font-style: italic;
+       padding-left: 10px;
+       border-left: 4px #00483a solid;
+}
+
+blockquote div.source {
+       color: #555;
+       margin-top: .5em;
+       text-align: right;
+}
+
+
+
+/*
+ * HEADER
+ */
+
+#header {
+	padding: 0px 20px 10px 20px;
+	position: relative;
+}
+
+#site-title {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+}
+
+#site-description {
+	position: absolute;
+	right: 25px;
+	bottom: 18px;
+}
+
+div.skip-link a {
+	position: absolute;
+	right: 0;
+	top: -99px;
+	background: #116db6;
+	color: #fff;
+	padding: .5em;
+	font-size: .7em;
+	text-decoration: none;
+}
+
+div.skip-link a:focus {
+	top: 0;
+}
+
+
+#site-title a,
+#site-description {
+	overflow: hidden;
+	text-indent: -999px;
+	display: block;
+}
+
+#site-title a {
+	height: 184px;
+	width: 163px;
+	background: url(/~philips/style/lpc-notext.png) no-repeat;
+}
+
+#site-description {
+	width: 667px;
+	height: 79px;
+	background: url(/~philips/style/tagline.png) no-repeat;
+}
+
+div#header,div#footer {
+text-align:center;
+}
+
+/*
+ * CONTENT
+ */
+
+div#container {
+	float:left;
+	margin: 0 -300px 0 0;
+	width:100%;
+}
+
+div#content {
+	margin:0 300px 0 0;
+	padding: 0 20px 0 20px;
+}
+
+h1,
+h2.entry-title {
+	font-size: 1.85em;
+	background: #EDF9F7;
+	margin: 0 -20px .8em;
+	padding: .2em 25px;
+	line-height: 1.5;
+	color: #333;
+}
+
+h1 a,
+h2.entry-title a {
+	color: #00483A;
+	text-decoration: none;
+}
+h2 {
+	font-size: 1.65em;
+	margin-bottom: 0.6em;
+}
+
+h3 {
+	font-size: 1.35em;
+	line-height: 1;
+	margin-bottom: .7em;
+}
+
+h4 {
+	font-size: 1.15em;
+	line-height: 1.25;
+	margin-bottom: .7em;
+}
+
+h5 {
+	font-size: 1em;
+	margin-bottom: .5em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+h1, h2, h3 {
+	color: #00483A;
+}
+
+h4, h5, h6 {
+	color: #333;
+}
+
+
+div.sidebar {
+float:right;
+overflow:hidden;
+width:180px;
+}
+
+div#secondary {
+clear:right;
+}
+
+div#footer {
+clear:both;
+width:100%;
+}
