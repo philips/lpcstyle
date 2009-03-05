@@ -131,7 +131,7 @@ div.skip-link a:focus {
 #site-title a,
 #site-description {
 	overflow: hidden;
-	text-indent: -999px;
+	text-indent: -9999px;
 	display: block;
 }
 
