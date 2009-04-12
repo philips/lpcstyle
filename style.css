@@ -197,10 +197,6 @@ div.skip-link a:focus {
 	bottom: 18px;
 }
 
-div#header div#footer {
-text-align:center;
-}
-
 /*
  * CONTENT
  */
@@ -281,6 +277,11 @@ div#footer {
 clear:both;
 width:100%;
 }
+
+div#header, div#footer {
+text-align:center;
+}
+
 
 ul, ol {
   margin: 0 1.5em 1.5em 1.5em;
