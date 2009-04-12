@@ -1,6 +1,10 @@
 /*
-LAYOUT: Two-Column (Right)
+LAYOUT: Linux Plumbers Conf
 DESCRIPTION: Two-column fluid layout with one sidebars right of content
+COLORS:
+
+top banner, th:	#00483a;
+h1, td:		#EDF9F7;
 */
 
 
@@ -22,18 +26,21 @@ margin:0 0 1.5em;
 
 body {
 	font: 87.5%/1.5em "Helvetica Neue", Arial, Helvetica, "Liberation sans", "Bitstream Vera Sans", sans-serif;
-	background:#FFC211 none repeat scroll 0 0;
+	background:#FFC211; 
 	font-size:87.5%;
 	position: relative;
 	padding: 0 .5em 0 .5em;
+	margin-bottom: 25px;
 }
 
 #wrapper {
 	background:#FFFFFF none repeat scroll 0 0;
-	position:relative;
-	min-width:65em;
-	max-width:80em;
+	width:71em;
 	margin: 0 auto;
+	position: relative;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
 }
 
 div#content {
@@ -44,12 +51,14 @@ div#content {
  * MENU
  */
 
+
 div#menu {
-	font-size:1em;
-	height:1.5em;
 	padding-top:0.3em;
-	width:100%;
+	font-size:1em;
+	height:3.5em;
 	background: #00483a;
+	margin:1em 0;
+	width:100%;
 }
 
 div#menu ul {
@@ -77,16 +86,62 @@ div#menu ul li a:hover, div#menu ul li a.selected {
 	border-bottom-color: black;
 }
 
+
+
 blockquote {
        font-style: italic;
        padding-left: 10px;
        border-left: 4px #00483a solid;
 }
 
-blockquote div.source {
+div.entry-date, blockquote div.source {
        color: #555;
        margin-top: .5em;
        text-align: right;
+       font-style: italic;
+}
+
+/* 
+ * SIDEBAR
+ */
+
+div.sidebar h3 {
+font-size:1.2em;
+}
+
+div.sidebar input#s {
+width:7em;
+}
+
+div.sidebar li {
+list-style:none;
+margin:0 0 2em;
+}
+
+div.sidebar li form {
+margin:0.2em 0 0;
+padding:0;
+}
+
+div.sidebar ul ul {
+margin:0 0 0 1em;
+}
+
+div.sidebar ul ul li {
+list-style:disc;
+margin:0;
+}
+
+div.sidebar ul ul ul {
+margin:0 0 0 0.5em;
+}
+
+div.sidebar ul ul ul li {
+list-style:circle;
+}
+
+div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
+float:left;
 }
 
 
@@ -95,21 +150,9 @@ blockquote div.source {
  * HEADER
  */
 
-#header {
+div#header {
 	padding: 0px 20px 10px 20px;
 	position: relative;
-}
-
-#site-title {
-	margin: 0;
-	padding: 0;
-	background: transparent;
-}
-
-#site-description {
-	position: absolute;
-	right: 25px;
-	bottom: 18px;
 }
 
 div.skip-link a {
@@ -127,27 +170,34 @@ div.skip-link a:focus {
 	top: 0;
 }
 
-
+#site-title,
 #site-title a,
 #site-description {
 	overflow: hidden;
-	text-indent: -9999px;
 	display: block;
+	text-indent: -999px;
+	background: none;
+}
+
+#site-title, #site-title a {
+	height: 184px;
+	width: 163px;
 }
 
 #site-title a {
-	height: 184px;
-	width: 163px;
-	background: url(lpc-notext.png) no-repeat;
+	background: transparent url(lpc-notext.png) no-repeat;
 }
 
 #site-description {
-	width: 667px;
-	height: 79px;
-	background: url(tagline.png) no-repeat;
+	position: absolute;
+	background: transparent url(tagline.png) no-repeat;
+	width: 493px;
+	height: 90px;
+	right: 25px;
+	bottom: 18px;
 }
 
-div#header,div#footer {
+div#header div#footer {
 text-align:center;
 }
 
@@ -175,6 +225,7 @@ h2.entry-title {
 	line-height: 1.5;
 	color: #333;
 }
+
 
 h1 a,
 h2.entry-title a {
@@ -219,7 +270,7 @@ h4, h5, h6 {
 div.sidebar {
 float:right;
 overflow:hidden;
-width:180px;
+width:250px;
 }
 
 div#secondary {
@@ -229,4 +280,51 @@ clear:right;
 div#footer {
 clear:both;
 width:100%;
+}
+
+ul, ol {
+  margin: 0 1.5em 1.5em 1.5em;
+}
+ 
+ul {
+  list-style-type: circle;
+}
+ 
+ol {
+  list-style: outside decimal;
+}
+ 
+th {
+	background: #00483a;
+	color: #fff;
+	font-weight: normal;
+	padding: 0 1em 0 1em;
+} 
+
+td {
+	vertical-align: middle;
+	width: 175px;
+	background: #EDF9F7;
+	padding: 0.333em;
+}
+
+table td{
+  border: 1px dotted #efefef;
+  vertical-align: top
+} 
+
+table {
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+div.sidebar ul .sponsor-links li {
+list-style-type: none;
+margin-top:0.8em;
+}
+
+ul.sponsor-links {
+padding: 0;
+margin: 0px;
+padding: 0px;
 }
