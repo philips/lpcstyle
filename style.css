@@ -327,26 +327,26 @@ ol {
   list-style: outside decimal;
 }
  
-th {
+.price-table th {
 	background: #00483a;
 	color: #fff;
 	font-weight: normal;
 	padding: 0 1em 0 1em;
 } 
 
-td {
+.price-table td {
 	vertical-align: middle;
 	width: 175px;
 	background: #EDF9F7;
 	padding: 0.333em;
 }
 
-table td{
+table.price-table td{
   border: 1px dotted #efefef;
   vertical-align: top
 } 
 
-table {
+table.price-table {
 	margin-top: 0.8em;
 	margin-bottom: 0.8em;
 }
