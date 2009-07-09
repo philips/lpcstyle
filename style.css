@@ -133,6 +133,10 @@ div.entry-date, blockquote div.source {
  * SIDEBAR
  */
 
+div.sidebar ul, div.sidebar h3 {
+margin: 1.4em 0 0 0;
+}
+
 div.sidebar h3 {
 font-size:1.2em;
 }
@@ -152,7 +156,7 @@ padding:0;
 }
 
 div.sidebar ul ul {
-margin:0 0 0 1em;
+margin:1em 0 0 1em;
 }
 
 div.sidebar ul ul li {
